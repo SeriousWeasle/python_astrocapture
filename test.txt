@@ -1,0 +1,24 @@
+
+User Controls
+
+                     brightness 0x00980900 (int)    : min=0 max=127 step=1 default=64 value=64 flags=slider
+                       contrast 0x00980901 (int)    : min=0 max=63 step=1 default=32 value=32 flags=slider
+                     saturation 0x00980902 (int)    : min=-100 max=100 step=1 default=0 value=0 flags=slider
+        white_balance_automatic 0x0098090c (menu)   : min=0 max=4 default=4 value=4 flags=update
+                    red_balance 0x0098090e (int)    : min=0 max=255 step=1 default=96 value=93 flags=inactive, slider, volatile
+                   blue_balance 0x0098090f (int)    : min=0 max=255 step=1 default=96 value=42 flags=inactive, slider, volatile
+                          gamma 0x00980910 (int)    : min=0 max=31 step=1 default=21 value=21 flags=slider
+                       exposure 0x00980911 (int)    : min=0 max=255 step=1 default=248 value=248
+                 gain_automatic 0x00980912 (bool)   : default=0 value=0 flags=update
+                           gain 0x00980913 (int)    : min=0 max=63 step=1 default=8 value=8
+         backlight_compensation 0x0098091c (bool)   : default=1 value=1
+                  color_effects 0x0098091f (menu)   : min=0 max=1 default=0 value=0
+               band_stop_filter 0x00980921 (bool)   : default=1 value=1
+                   auto_contour 0x0098f900 (bool)   : default=0 value=0 flags=update
+                        contour 0x0098f901 (int)    : min=0 max=63 step=1 default=16 value=16 flags=slider
+        dynamic_noise_reduction 0x0098f902 (int)    : min=0 max=3 step=1 default=1 value=1
+       auto_white_balance_speed 0x0098f903 (int)    : min=1 max=32 step=1 default=1 value=1
+       auto_white_balance_delay 0x0098f904 (int)    : min=0 max=63 step=1 default=0 value=0
+             save_user_settings 0x0098f905 (button) : flags=write-only, execute-on-write
+          restore_user_settings 0x0098f906 (button) : flags=update, write-only, execute-on-write
+       restore_factory_settings 0x0098f907 (button) : flags=update, write-only, execute-on-write
